@@ -72,7 +72,7 @@ Thank you [@EvanCarroll](https://github.com/remy/nodemon/issues/68#issuecomment-
 
 If you're using nodemon with [forever](https://github.com/nodejitsu/forever) (perhaps in a production environment) you can combine the two together. This way if the script crashes, forever restarts the script, and if there are file changes, nodemon restarts your script. For more detail, see [issue 30](https://github.com/remy/nodemon/issues/30).
 
-To acheive this you need to include the `--exitcrash` flag to ensure nodemon exits if the script crashes (or exits unexpectedly):
+To achieve this you need to include the `--exitcrash` flag to ensure nodemon exits if the script crashes (or exits unexpectedly):
 
     forever nodemon --exitcrash server.js
 
